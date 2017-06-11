@@ -1,0 +1,47 @@
+{
+    "name": "vscode-pwa",
+    "publisher": "johnpapa",
+    "displayName": "PWA Tools",
+    "description": "PWA Tools",
+    "icon": "images/pwa.png",
+    "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/johnpapa/vscode-pwa.git"
+    },
+    "keywords": [
+        "Angular",
+        "PWA",
+        "JavaScript",
+        "Service Worker"
+    ],
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "devDependencies": {
+        "vscode": "^1.11.0"
+    },
+    "categories": [
+        "Snippets",
+        "Other"
+    ],
+    "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": "manifest.json",
+                "url": "http://json.schemastore.org/web-manifest"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "Inject Precache": {
+    "prefix": "pwa-inject-precache",
+    "description": "Generate and inject precache manifest for an existing service worker",
+    "body": [
+      "// TODO: Install WorkBox-build from a command prompt",
+      "/ /TODO:   npm install workbox-build",
+      "const workboxBuild = require('workbox-build');",
+      "const SRC_DIR = 'src';",
+      "const BUILD_DIR = 'dist';",
+      "const SW = '${1:sw.js}';",
+      "",
+      "const input ={",
+      "  swSrc: `\\${SRC_DIR}/\\${SW}`,",
+      "  swDest: `\\${BUILD_DIR}/\\${SW}`,",
+      "  globDirectory: BUILD_DIR,",
+      "  globPatterns: [",
+      "    '**/*.{js,png,ico,svg,html,css}',",
+      "    'assets/**/*'",
+      "  ],",
+      "  globIgnores: ['sw.js'],",
+      "  maximumFileSizeToCacheInBytes: 4000000",
+      "};",
+      "",
+      "workboxBuild.injectManifest(input).then(() =>{",
+      "  console.log(`The service worker \\${BUILD_DIR}/\\${SW} has been injected with a precache list.`);",
+      "});",
+      "${0}"
+    ]
+  }
+}
