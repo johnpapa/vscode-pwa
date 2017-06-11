@@ -4,3 +4,5 @@
 # 0.0.1 (2017-06-10)
 
 * Initilizing the extension
+* Added `manifest.json` schema
+* 
