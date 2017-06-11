@@ -1,0 +1,41 @@
+{
+  "Manifest Link": {
+    "prefix": "pwa-manifest",
+    "description": "Generate a basic manifest.json file",
+    "body": [
+      "{",
+      "  \"\\$schema\": \"http://json.schemastore.org/web-manifest\",",
+      "  \"short_name\": \"${1:12CharShortName}\",",
+      "  \"name\": \"${2:Name}\",",
+      "  \"description\": \"${3:description}\",",
+      "  \"icons\": [",
+      "    {",
+      "      \"src\": \"${4:img2x.jpg}\",",
+      "      \"sizes\": \"96x96\",",
+      "      \"type\": \"image/jpg\"",
+      "    },",
+      "    {",
+      "      \"src\": \"${5:img3x.jpg}\",",
+      "      \"sizes\": \"144x144\",",
+      "      \"type\": \"image/jpg\"",
+      "    },",
+      "    {",
+      "      \"src\": \"${6:img4x.jpg}\",",
+      "      \"sizes\": \"192x192\",",
+      "      \"type\": \"image/jpg\"",
+      "    },",
+      "    {",
+      "      \"src\": \"${7:img6x.jpg}\",",
+      "      \"sizes\": \"512x512\",",
+      "      \"type\": \"image/jpg\"",
+      "    }",
+      "  ],",
+      "  \"background_color\": \"${8:#EEE}\",",
+      "  \"theme_color\": \"${9:#1565c0}\",",
+      "  \"start_url\": \"./?utm_source=web_app_manifest\",",
+      "  \"display\": \"standalone\",",
+      "  \"orientation\": \"any\"",
+      "}"
+    ]
+  }
+}
