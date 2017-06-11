@@ -67,5 +67,7 @@ Before we begin, install the Angular CLI and lite-server, if you haven't already
 12. Run `node generate-sw.js`
 13. Run `cd dist && lite-server`
 
+**Now test it!**
 
+Your app should be running in the browser. Open the developer tools, go to the `Application` tab, and select `Service Workers`. Inspect the service worker, and try to go offline and refresh.
 
