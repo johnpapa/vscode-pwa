@@ -5,5 +5,6 @@
 
 * Initilizing the extension
 * Added `manifest.json` schema
-* Added snippet for precache manifest from worbox-build
-* Addef snippet to create a service worker ready to accept the precache list from workbox-build
+* Added javascript snippet for precache manifest from worbox-build
+* Added javascript snippet to create a service worker ready to accept the precache list from workbox-build
+* Added HTML snippet to create the link to the manifest.json

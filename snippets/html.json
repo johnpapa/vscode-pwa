@@ -1,0 +1,10 @@
+{
+  "Manifest Link": {
+    "prefix": "pwa-manifest",
+    "description": "Add the link to the manifest.json",
+    "body": [
+      "<link rel=\"manifest\" href=\"/manifest.json\">",
+      ""
+    ]
+  }
+}
