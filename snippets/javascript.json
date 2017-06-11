@@ -7,8 +7,8 @@
       "// TODO:   npm install workbox-build",
       "const workboxBuild = require('workbox-build');",
       "const SRC_DIR = 'src';",
-      "const BUILD_DIR = 'dist';",
-      "const SW = '${1:sw.js}';",
+      "const BUILD_DIR = '{1:dist}';",
+      "const SW = '${2:sw.js}';",
       "",
       "const input ={",
       "  swSrc: `\\${SRC_DIR}/\\${SW}`,",
@@ -18,7 +18,7 @@
       "    '**/*.{js,png,ico,svg,html,css}',",
       "    'assets/**/*'",
       "  ],",
-      "  globIgnores: ['sw.js'],",
+      "  globIgnores: ['${2:sw.js}'],",
       "  maximumFileSizeToCacheInBytes: 4000000",
       "};",
       "",
@@ -29,7 +29,7 @@
     ]
   },
   "Service Worker": {
-    "prefix": "pwa-service-worker",
+    "prefix": "pwa-custom-service-worker",
     "description": "A service worker ready to accept the precache list from workbox-build",
     "body": [
       "// https://developers.google.com/web/fundamentals/getting-started/primers/service-workers",
@@ -46,6 +46,33 @@
       " */",
       "workboxSW.precache([]);",
       ""
+    ]
+  },
+  "Generate Service Worker": {
+    "prefix": "pwa-generate-service-worker",
+    "description": "Generate a service worker with a precache manifest",
+    "body": [
+      "// TODO: Install WorkBox-build from a command prompt",
+      "// TODO:   npm install workbox-build",
+      "const workboxBuild = require('workbox-build');",
+      "const BUILD_DIR = '${1:dist}';",
+      "const SW = '${2:sw.js}';",
+      "",
+      "const input ={",
+      "  swDest: `\\${BUILD_DIR}/\\${SW}`,",
+      "  globDirectory: BUILD_DIR,",
+      "  globPatterns: [",
+      "    '**/*.{js,png,ico,svg,html,css}',",
+      "    //'assets/**/*'",
+      "  ],",
+      "  globIgnores: [],",
+      "  maximumFileSizeToCacheInBytes: 4000000",
+      "};",
+      "",
+      "workboxBuild.generateSW(input).then(() =>{",
+      "  console.log(`The service worker \\${BUILD_DIR}/\\${SW} has been generated with a precache list.`);",
+      "});",
+      "${0}"
     ]
   }
 }

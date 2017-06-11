@@ -8,6 +8,7 @@
       "  \"short_name\": \"${1:12CharShortName}\",",
       "  \"name\": \"${2:Name}\",",
       "  \"description\": \"${3:description}\",",
+      "  \"scope\": \"/\",",
       "  \"icons\": [",
       "    {",
       "      \"src\": \"${4:img2x.jpg}\",",

@@ -1,10 +1,16 @@
 {
   "Manifest Link": {
-    "prefix": "pwa-manifest",
+    "prefix": "pwa-manifest-link",
     "description": "Add the link to the manifest.json",
     "body": [
-      "<link rel=\"manifest\" href=\"/manifest.json\">",
-      ""
+      "<link rel=\"manifest\" href=\"/manifest.json\">"
+    ]
+  },
+  "Apple Mobile Web Capable Meta Tag": {
+    "prefix": "pwa-apple-mobile-web-capable",
+    "description": "Add the meta tag for apple mobile web capable",
+    "body": [
+      "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">"
     ]
   }
 }

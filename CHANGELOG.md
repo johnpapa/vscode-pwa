@@ -1,11 +1,15 @@
 ## VS Code Extension for PWA Tooling
 
-<a name="0.0.2"></a>
-# 0.0.2 (2017-06-11)
+<a name="0.0.3"></a>
+# 0.0.3 (2017-06-11)
 
 Features
 * Added pwa-manifest, to create a `manifest.json`
+* Added pwa-apple-mobile-web-capable to add the meta tag for apple mobile web capable
+* Added pwa-generate-service-worker to generate a service worker with a precache manifest
 * pwa-register works for both TypeScript and JavaScript
+* Renamed HTML snippet to create the link to the manifest.json to pwa-manifest-link
+* Renamed pwa-service-worker to pwa-custom-service-worker
 
 Bug Fixes
 * pwa-register now has correct placeholder sequence
