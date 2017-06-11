@@ -43,6 +43,14 @@
                 "path": "./snippets/typescript.json"
             },
             {
+                "language": "typescript",
+                "path": "./snippets/javascript-or-typescript.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript-or-typescript.json"
+            },
+            {
                 "language": "javascript",
                 "path": "./snippets/javascript.json"
             },
