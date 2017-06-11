@@ -3,6 +3,8 @@ VS Code Extension for PWA Tools
 
 This extension for Visual Studio Code adds snippets and JSON schema for a `manifest.json` for creating Progressive Web Apps (PWA).
 
+**THIS IS AN ALPHA VERSION**
+
 ![Use Extension](images/inject-precache.gif)
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
