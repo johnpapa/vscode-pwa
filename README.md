@@ -52,20 +52,20 @@ Let's take a PWA for a spin. Using the Angular CLI, let's generate a new app and
 
 Before we begin, install the Angular CLI and lite-server, if you haven't already done so, by running `npm i @angular/cli lite-server -g`
 
-0. Create an Angular app with `ng new my-app --routing` and open the app in VS Code
+1. Create an Angular app with `ng new my-app --routing` and open the app in VS Code
 1. Create `src/manifest.json`
-2. Use the `pwa-manifest` snippet
-3. Open `src/index.html` and use the `pwa-manifest` snippet
-4. Use the pwa-apple-mobile-web-capable snippet
-5. Create /generate-sw.js
-6. Run `npm i workbox-build`
-7. Use the pwa-generate-service-worker
-8. Add "manifest.json" to the `apps[0].assets` array in `.angular-cli.json`
-9. Open `src/app/main.ts` and run `pwa-register` at the bottom
-10. Call `.then(() => registerServiceWorker());` after bootstrapping
-11. Run `ng build --prod`
-12. Run `node generate-sw.js`
-13. Run `cd dist && lite-server`
+1. Use the `pwa-manifest` snippet
+1. Open `src/index.html` and use the `pwa-manifest` snippet
+1. Use the pwa-apple-mobile-web-capable snippet
+1. Create /generate-sw.js
+1. Run `npm i workbox-build`
+1. Use the pwa-generate-service-worker
+1. Add "manifest.json" to the `apps[0].assets` array in `.angular-cli.json`
+1. Open `src/app/main.ts` and run `pwa-register` at the bottom
+1. Call `.then(() => registerServiceWorker());` after bootstrapping
+1. Run `ng build --prod`
+1. Run `node generate-sw.js`
+1. Run `cd dist && lite-server`
 
 **Now test it!**
 
