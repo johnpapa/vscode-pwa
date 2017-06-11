@@ -8,3 +8,4 @@
 * Added javascript snippet for precache manifest from worbox-build
 * Added javascript snippet to create a service worker ready to accept the precache list from workbox-build
 * Added HTML snippet to create the link to the manifest.json
+* Added TypeScript snippet to registers the service worker

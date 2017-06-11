@@ -17,8 +17,13 @@ pwa-service-worker        // create a service worker
 ```
 
 ### HTML Snippets
-```html
+```javascript
 pwa-manifest              // create the link to the manifest.json
+```
+
+### TypeScript Snippets
+```javascript
+pwa-register              // function that registers the service worker
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.

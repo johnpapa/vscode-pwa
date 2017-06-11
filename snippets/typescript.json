@@ -1,0 +1,19 @@
+{
+  "Manifest Link": {
+    "prefix": "pwa-register",
+    "description": "Function that registers the service worker",
+    "body": [
+      "function registerServiceWorker(){",
+      "  if ('serviceWorker' in navigator){",
+      "    navigator.serviceWorker.register('/${0:sw.js}').then(reg => {",
+      "      console.log('Registration successful', reg);",
+      "      })",
+      "      .catch(e => console.error('Error during service worker registration:', e));",
+      "    } else{",
+      "    console.warn('Service Worker is not supported');",
+      "    }",
+      "  }",
+      "$0"
+      ]
+    }
+  }
