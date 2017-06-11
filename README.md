@@ -28,6 +28,11 @@ pwa-manifest              // create the link to the manifest.json
 pwa-register              // function that registers the service worker
 ```
 
+### JSON Snippets
+```javascript
+pwa-manifest              // * ccreate tjhe contents of `manifest.json`
+```
+
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
 ## Installation

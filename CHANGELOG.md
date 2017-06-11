@@ -1,5 +1,15 @@
 ## VS Code Extension for PWA Tooling
 
+<a name="0.0.2"></a>
+# 0.0.2 (2017-06-11)
+
+Features
+* Added pwa-manifest, to create a `manifest.json`
+* pwa-register works for both TypeScript and JavaScript
+
+Bug Fixes
+* pwa-register now has correct placeholder sequence
+
 <a name="0.0.1"></a>
 # 0.0.1 (2017-06-10)
 
