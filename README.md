@@ -43,7 +43,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 2. Launch Code
 3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
 4. Select `Install Extension`
-5. Choose the extension
+5. Choose the extension `PWA-Tools`
 6. Reload Visual Studio Code
 
 ## Try it Out
@@ -55,11 +55,11 @@ Before we begin, install the Angular CLI and lite-server, if you haven't already
 1. Create an Angular app with `ng new my-app --routing` and open the app in VS Code
 1. Create `src/manifest.json`
 1. Use the `pwa-manifest` snippet
-1. Open `src/index.html` and use the `pwa-manifest` snippet
-1. Use the pwa-apple-mobile-web-capable snippet
-1. Create /generate-sw.js
-1. Run `npm i workbox-build`
-1. Use the pwa-generate-service-worker
+1. Open `src/index.html` and use the `pwa-manifest-link` snippet (in the <head></head> element)
+1. Use the pwa-apple-mobile-web-capable snippet (in the <head></head> element)
+1. Create `generate-sw.js`
+1. Run `cd my-app` and then `npm i workbox-build` (add --save if you're using npm < 5.x)
+1. Use the pwa-generate-service-worker in `generate-sw.js`
 1. Add "manifest.json" to the `apps[0].assets` array in `.angular-cli.json`
 1. Open `src/app/main.ts` and run `pwa-register` at the bottom
 1. Call `.then(() => registerServiceWorker());` after bootstrapping
