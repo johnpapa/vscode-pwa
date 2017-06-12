@@ -8,6 +8,10 @@ Features
 * Added pwa-event-sync
 * Added pwa-event-notificationclick
 * Added pwa-event-pushsubscriptionchange
+* pwa-event-load
+* pwa-event-activate
+* pwa-event-install
+* pwa-event-fetch   
 
 <a name="0.0.3"></a>
 # 0.0.3 (2017-06-11)

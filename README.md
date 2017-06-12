@@ -26,9 +26,13 @@ pwa-generate-service-worker       // generate a service worker with a precache m
 
 // Event listeners
 pwa-event-push                    // create a event listener for push
-pwa-event-sync                    // create a event listener for push
-pwa-event-notificationclick       // create a event listener for push
-pwa-event-pushsubscriptionchange  // create a event listener for push
+pwa-event-sync                    // create a event listener for sync
+pwa-event-notificationclick       // create a event listener for notificationclick
+pwa-event-pushsubscriptionchange  // create a event listener for pushsubscriptionchange
+pwa-event-load                    // create a event listener for load
+pwa-event-activate                // create a event listener for activate
+pwa-event-install                 // create a event listener for install
+pwa-event-fetch                   // create a event listener for fetch
 ```
 
 ### HTML Snippets

@@ -36,7 +36,7 @@
       ""
     ]
   },
-  "Push Event": {
+  "PWA Push Event": {
     "prefix": "pwa-event-push",
     "description": "Create an event listener that handles the push event",
     "body": [
@@ -45,7 +45,7 @@
       "});"
     ]
   },
-  "Sync Event": {
+  "PWA Sync Event": {
     "prefix": "pwa-event-sync",
     "description": "Create an event listener that handles the sync event",
     "body": [
@@ -54,7 +54,7 @@
       "});"
     ]
   },
-  "Notification Click Event": {
+  "PWA Notification Click Event": {
     "prefix": "pwa-event-notificationclick",
     "description": "Create an event listener that handles the notificationclick event",
     "body": [
@@ -63,11 +63,47 @@
       "});"
     ]
   },
-  "Push Subscription Change Event": {
+  "PWA Push Subscription Change Event": {
     "prefix": "pwa-event-pushsubscriptionchange",
     "description": "Create an event listener that handles the pushsubscriptionchange event",
     "body": [
-      "self.addEventListener('pupushsubscriptionchangesh', event => {",
+      "self.addEventListener('pushsubscriptionchangesh', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "PWA Install Event": {
+    "prefix": "pwa-event-install",
+    "description": "Create an event listener that handles the install event",
+    "body": [
+      "self.addEventListener('install', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "PWA Load Event": {
+    "prefix": "pwa-event-load",
+    "description": "Create an event listener that handles the load event",
+    "body": [
+      "self.addEventListener('load', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "PWA Activate Change Event": {
+    "prefix": "pwa-event-activate",
+    "description": "Create an event listener that handles the activate event",
+    "body": [
+      "self.addEventListener('activatesh', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "PWA Fetch Change Event": {
+    "prefix": "pwa-event-fetch",
+    "description": "Create an event listener that handles the fetch event",
+    "body": [
+      "self.addEventListener('fetchsh', event => {",
       "  $0",
       "});"
     ]
