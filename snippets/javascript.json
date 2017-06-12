@@ -3,7 +3,7 @@
     "prefix": "pwa-inject-precache",
     "description": "Generate and inject precache manifest for an existing service worker",
     "body": [
-      "// TODO: Install WorkBox-build from a command prompt",
+      "// TODO: Install workBox-build from a command prompt",
       "// TODO:   npm install workbox-build",
       "const workboxBuild = require('workbox-build');",
       "const SRC_DIR = 'src';",
@@ -26,26 +26,6 @@
       "  console.log(`The service worker \\${BUILD_DIR}/\\${SW} has been injected with a precache list.`);",
       "});",
       "${0}"
-    ]
-  },
-  "Service Worker": {
-    "prefix": "pwa-custom-service-worker",
-    "description": "A service worker ready to accept the precache list from workbox-build",
-    "body": [
-      "// https://developers.google.com/web/fundamentals/getting-started/primers/service-workers",
-      "// ------------------------------",
-      "// Pre Cache and Update",
-      "// ------------------------------",
-      "importScripts('./workbox-sw.prod.v1.0.1.js');",
-      "",
-      "const workboxSW = new WorkboxSW({ clientsClaim: true });",
-      "/**",
-      " * precache() is passed a manifest of URLs and versions",
-      " * each time the service worker starts up.",
-      " * Use workbox-build to generate the manifest",
-      " */",
-      "workboxSW.precache([]);",
-      ""
     ]
   },
   "Generate Service Worker": {

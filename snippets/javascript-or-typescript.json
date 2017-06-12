@@ -14,6 +14,62 @@
       "  }",
       "}",
       "$0"
-      ]
-    }
+    ]
+  },
+  "Service Worker": {
+    "prefix": "pwa-custom-service-worker",
+    "description": "A service worker ready to accept the precache list from workbox-build",
+    "body": [
+      "// https://developers.google.com/web/fundamentals/getting-started/primers/service-workers",
+      "// ------------------------------",
+      "// Pre Cache and Update",
+      "// ------------------------------",
+      "importScripts('./workbox-sw.prod.v1.0.1.js');",
+      "",
+      "const workboxSW = new WorkboxSW({ clientsClaim: true });",
+      "/**",
+      " * precache() is passed a manifest of URLs and versions",
+      " * each time the service worker starts up.",
+      " * Use workbox-build to generate the manifest",
+      " */",
+      "workboxSW.precache([]);",
+      ""
+    ]
+  },
+  "Push Event": {
+    "prefix": "pwa-event-push",
+    "description": "Create an event listener that handles the push event",
+    "body": [
+      "self.addEventListener('push', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "Sync Event": {
+    "prefix": "pwa-event-sync",
+    "description": "Create an event listener that handles the sync event",
+    "body": [
+      "self.addEventListener('sync', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "Notification Click Event": {
+    "prefix": "pwa-event-notificationclick",
+    "description": "Create an event listener that handles the notificationclick event",
+    "body": [
+      "self.addEventListener('notificationclick', event => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "Push Subscription Change Event": {
+    "prefix": "pwa-event-pushsubscriptionchange",
+    "description": "Create an event listener that handles the pushsubscriptionchange event",
+    "body": [
+      "self.addEventListener('pupushsubscriptionchangesh', event => {",
+      "  $0",
+      "});"
+    ]
   }
+}

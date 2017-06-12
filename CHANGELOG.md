@@ -1,5 +1,14 @@
 ## VS Code Extension for PWA Tooling
 
+<a name="0.0.4"></a>
+# 0.0.4 (2017-06-12)
+
+Features
+* Added pwa-event-push
+* Added pwa-event-sync
+* Added pwa-event-notificationclick
+* Added pwa-event-pushsubscriptionchange
+
 <a name="0.0.3"></a>
 # 0.0.3 (2017-06-11)
 

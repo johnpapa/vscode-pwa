@@ -12,27 +12,34 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
+### JavaScript / TypeScript Snippets
+```javascript
+pwa-custom-service-worker         // create a service worker file which can be extended
+pwa-register                      // function that registers the service worker
+```
+
 ### JavaScript Snippets
 ```javascript
-pwa-inject-precache           // inject precache list into service worker
-pwa-custom-service-worker     // create a service worker file which can be extended
-pwa-generate-service-worker   // generate a service worker with a precache manifest
+// Helpful for build processes that generate service worker code
+pwa-inject-precache               // inject precache list into service worker
+pwa-generate-service-worker       // generate a service worker with a precache manifest
+
+// Event listeners
+pwa-event-push                    // create a event listener for push
+pwa-event-sync                    // create a event listener for push
+pwa-event-notificationclick       // create a event listener for push
+pwa-event-pushsubscriptionchange  // create a event listener for push
 ```
 
 ### HTML Snippets
 ```javascript
-pwa-manifest-link             // create the link to the manifest.json
-pwa-apple-mobile-web-capable  // add the meta tag for apple mobile web capable
-```
-
-### TypeScript Snippets
-```javascript
-pwa-register                  // function that registers the service worker
+pwa-manifest-link                 // create the link to the manifest.json
+pwa-apple-mobile-web-capable      // add the meta tag for apple mobile web capable
 ```
 
 ### JSON Snippets
 ```javascript
-pwa-manifest                  // create the contents of `manifest.json`
+pwa-manifest                      // create the contents of `manifest.json`
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
