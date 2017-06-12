@@ -43,7 +43,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 2. Launch Code
 3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
 4. Select `Install Extension`
-5. Choose the extension
+5. Choose the extension `PWA-Tools`
 6. Reload Visual Studio Code
 
 ## Try it Out
