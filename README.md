@@ -32,7 +32,7 @@ pwa-register                  // function that registers the service worker
 
 ### JSON Snippets
 ```javascript
-pwa-manifest                  // * ccreate tjhe contents of `manifest.json`
+pwa-manifest                  // * create the contents of `manifest.json`
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
@@ -63,9 +63,7 @@ Before we begin, install the Angular CLI and lite-server, if you haven't already
 1. Add "manifest.json" to the `apps[0].assets` array in `.angular-cli.json`
 1. Open `src/app/main.ts` and run `pwa-register` at the bottom
 1. Call `.then(() => registerServiceWorker());` after bootstrapping
-1. Run `ng build --prod`
-1. Run `node generate-sw.js`
-1. Run `cd dist && lite-server`
+1. Run `ng build --prod && node generate-sw.js && cd dist && lite-server`
 
 **Now test it!**
 
