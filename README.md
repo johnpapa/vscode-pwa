@@ -57,14 +57,14 @@ Before we begin, install the Angular CLI and lite-server, if you haven't already
 1. Use the `pwa-manifest` snippet
 1. Open `src/index.html` and use the `pwa-manifest-link` snippet (in the <head></head> element)
 1. Use the pwa-apple-mobile-web-capable snippet (in the <head></head> element)
-1. Create `src/generate-sw.js`
+1. Create `generate-sw.js`
 1. Run `cd my-app` and then `npm i workbox-build` (add --save if you're using npm < 5.x)
-1. Use the pwa-generate-service-worker in `src/generate-sw.js`
+1. Use the pwa-generate-service-worker in `generate-sw.js`
 1. Add "manifest.json" to the `apps[0].assets` array in `.angular-cli.json`
 1. Open `src/app/main.ts` and run `pwa-register` at the bottom
 1. Call `.then(() => registerServiceWorker());` after bootstrapping
 1. Run `ng build --prod`
-1. Run `node src/generate-sw.js`
+1. Run `node generate-sw.js`
 1. Run `cd dist && lite-server`
 
 **Now test it!**
