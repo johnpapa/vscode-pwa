@@ -32,7 +32,7 @@ pwa-register                  // function that registers the service worker
 
 ### JSON Snippets
 ```javascript
-pwa-manifest                  // * create the contents of `manifest.json`
+pwa-manifest                  // create the contents of `manifest.json`
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
