@@ -80,7 +80,7 @@
     "description": "Create an event listener that handles the pushsubscriptionchange event",
     "body": [
       "self.addEventListener('pushsubscriptionchange', event => {",
-      "/tconst applicationServerKey = urlB64ToUint8Array(${1:applicationServerPublicKey});",
+      "/tconst applicationServerKey = ${1:applicationServerPublicKey};",
       "/tevent.waitUntil(",
       "/t/tself.registration.pushManager.subscribe({",
       "/t/t/tuserVisibleOnly: true,",
