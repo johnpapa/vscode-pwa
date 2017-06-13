@@ -41,7 +41,14 @@
     "description": "Create an event listener that handles the push event",
     "body": [
       "self.addEventListener('push', event => {",
+      "/tconst title = '${1:Push Title}';",
+      "/tconst options ={",
+      "/t/tbody: event.data.text(),",
+      "/t/ticon: '${2:image.png}',",
+      "/t/tbadge: '${3:image.png}'",
+      "/t};",
       "/t$0",
+      "/t event.waitUntil(self.registration.showNotification(title, options));",
       "});"
     ]
   },
@@ -50,7 +57,9 @@
     "description": "Create an event listener that handles the sync event",
     "body": [
       "self.addEventListener('sync', event => {",
-      "/t$0",
+      "/tevent.waitUntil(",
+      "/t/t$0",
+      "/t);",
       "});"
     ]
   },
@@ -71,7 +80,16 @@
     "description": "Create an event listener that handles the pushsubscriptionchange event",
     "body": [
       "self.addEventListener('pushsubscriptionchange', event => {",
-      "/t$0",
+      "/tconst applicationServerKey = urlB64ToUint8Array(${1:applicationServerPublicKey});",
+      "/tevent.waitUntil(",
+      "/t/tself.registration.pushManager.subscribe({",
+      "/t/t/tuserVisibleOnly: true,",
+      "/t/t/tapplicationServerKey: applicationServerKey",
+      "/t})",
+      "/t/t/t.then(newSubscription => {",
+      "/t/t/t/t$0",
+      "/t/tt})",
+      "/t);",
       "});"
     ]
   },
@@ -91,7 +109,9 @@
     "description": "Create an event listener that handles the load event",
     "body": [
       "self.addEventListener('load', event => {",
-      "/t$0",
+      "/tevent.waitUntil(",
+      "/t/t$0",
+      "/t)",
       "});"
     ]
   },
@@ -100,7 +120,9 @@
     "description": "Create an event listener that handles the activate event",
     "body": [
       "self.addEventListener('activate', event => {",
-      "/t$0",
+      "/tevent.waitUntil(",
+      "/t/t$0",
+      "/t)",
       "});"
     ]
   },
@@ -109,7 +131,12 @@
     "description": "Create an event listener that handles the fetch event",
     "body": [
       "self.addEventListener('fetch', event => {",
-      "/t$0",
+      "/tevent.respondWith(",
+      "/t/t$0",
+      "/t);",
+      "/tevent.waitUntil(",
+      "/t/t",
+      "/t);",
       "});"
     ]
   }
