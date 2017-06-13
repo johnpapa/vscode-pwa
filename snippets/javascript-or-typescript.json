@@ -4,14 +4,14 @@
     "description": "Function that registers the service worker",
     "body": [
       "function registerServiceWorker() {",
-      "  if ('serviceWorker' in navigator) {",
-      "    navigator.serviceWorker.register('/${1:sw.js}').then(reg => {",
-      "      console.log('Registration successful', reg);",
-      "    })",
-      "      .catch(e => console.error('Error during service worker registration:', e));",
-      "  } else {",
-      "    console.warn('Service Worker is not supported');",
-      "  }",
+      "/tif ('serviceWorker' in navigator) {",
+      "/t/tnavigator.serviceWorker.register('/${1:sw.js}').then(reg => {",
+      "/t/t/tconsole.log('Registration successful', reg);",
+      "/t/t})",
+      "/t/t/t.catch(e => console.error('Error during service worker registration:', e));",
+      "/t} else {",
+      "/t/tconsole.warn('Service Worker is not supported');",
+      "/t}",
       "}",
       "$0"
     ]
@@ -41,7 +41,7 @@
     "description": "Create an event listener that handles the push event",
     "body": [
       "self.addEventListener('push', event => {",
-      "  $0",
+      "/t$0",
       "});"
     ]
   },
@@ -50,7 +50,7 @@
     "description": "Create an event listener that handles the sync event",
     "body": [
       "self.addEventListener('sync', event => {",
-      "  $0",
+      "/t$0",
       "});"
     ]
   },
@@ -59,7 +59,10 @@
     "description": "Create an event listener that handles the notificationclick event",
     "body": [
       "self.addEventListener('notificationclick', event => {",
-      "  $0",
+      "/tevent.notification.close();",
+      "/tevent.waitUntil(",
+      "/t/t$0",
+      "/t);",
       "});"
     ]
   },
@@ -67,8 +70,8 @@
     "prefix": "pwa-event-pushsubscriptionchange",
     "description": "Create an event listener that handles the pushsubscriptionchange event",
     "body": [
-      "self.addEventListener('pushsubscriptionchangesh', event => {",
-      "  $0",
+      "self.addEventListener('pushsubscriptionchange', event => {",
+      "/t$0",
       "});"
     ]
   },
@@ -77,7 +80,9 @@
     "description": "Create an event listener that handles the install event",
     "body": [
       "self.addEventListener('install', event => {",
-      "  $0",
+      "/tevent.waitUntil(",
+      "/t/t$0",
+      "/t)",
       "});"
     ]
   },
@@ -86,7 +91,7 @@
     "description": "Create an event listener that handles the load event",
     "body": [
       "self.addEventListener('load', event => {",
-      "  $0",
+      "/t$0",
       "});"
     ]
   },
@@ -94,8 +99,8 @@
     "prefix": "pwa-event-activate",
     "description": "Create an event listener that handles the activate event",
     "body": [
-      "self.addEventListener('activatesh', event => {",
-      "  $0",
+      "self.addEventListener('activate', event => {",
+      "/t$0",
       "});"
     ]
   },
@@ -103,8 +108,8 @@
     "prefix": "pwa-event-fetch",
     "description": "Create an event listener that handles the fetch event",
     "body": [
-      "self.addEventListener('fetchsh', event => {",
-      "  $0",
+      "self.addEventListener('fetch', event => {",
+      "/t$0",
       "});"
     ]
   }
