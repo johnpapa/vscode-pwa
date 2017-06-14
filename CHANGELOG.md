@@ -1,5 +1,11 @@
 ## VS Code Extension for PWA Tooling
 
+<a name="0.1.0"></a>
+# 0.1.0 (2017-06-14)
+
+Bug Fixes
+* Fixed typos in the tabs
+
 <a name="0.0.5"></a>
 # 0.0.5 (2017-06-13)
 
